@@ -41,6 +41,6 @@ Then you could do
 ```js
 	$("h1, h2").bulb("article.wrap")
 ```
-This means "bulb <h1> and <h2> outside of article.wrap".
+This means "bulb headings outside of article".
 
 See a demo at example.html.

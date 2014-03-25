@@ -32,7 +32,7 @@
         parent = true;
       }
       this.each(function() {
-        if (selector) {
+        if (selector != null) {
           while (!$(this).parent().is(selector)) {
             bulb($(this));
           }

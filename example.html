@@ -26,6 +26,7 @@
 		<div class="thin">
 			<h2>Next p</h2>
 			<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+			<h2>Next p</h2>
 			<h3>h3</h3>
 			<h4>h4</h4>
 			<h5>h5</h5>
@@ -36,7 +37,9 @@
 
 	<script src="jquery-bulb.js"></script>
 	<script>
-		$("h1, h2, h3, h4, h5, h6").bulb('.wrap')
+		$("h1, h2").bulb(".wrap") // bulb <h1> and <h2> OUTSIDE a .wrap
+
+		$("h3, h4, h5, h6").bulb(".wrap", false) // bulb other headings, keeping them inside .wrap
 	</script>
 </body>
 </html>

@@ -21,7 +21,7 @@ plugin = ($) ->
 
 	$.fn.bulb = (selector, parent = yes) ->
 		@each ->
-			if selector
+			if selector?
 				bulb $(@) while not $(@).parent().is selector
 			bulb $(@) if parent
 		@
